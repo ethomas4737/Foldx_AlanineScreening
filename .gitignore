@@ -10,6 +10,9 @@ __pycache__/
 .venv/
 venv/
 
+# FoldX binary (download separately — see README)
+foldx_*
+
 # FoldX run artefacts (generated at runtime, not results)
 *.log
 rotabase.txt

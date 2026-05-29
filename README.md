@@ -42,7 +42,7 @@ project_root/
 │   └── reports/
 │       └── alanine_scan_report.md — Full interpretation of results
 │
-├── foldx_20261231                 — FoldX 5.1 binary (macOS x86_64)
+├── foldx_20261231                 — FoldX 5.1 binary (not included; see Dependencies)
 └── molecules/                     — FoldX rotamer library
 ```
 
@@ -133,6 +133,17 @@ Full interpretation in `04_analysis/reports/alanine_scan_report.md`.
 
 ## Dependencies
 
-- FoldX 5.1 (binary included: `foldx_20261231`)
+### FoldX
+
+FoldX is free for academic use but must be downloaded directly from the developers — it cannot be redistributed here.
+
+1. Register and download FoldX 5.1 from [foldxsuite.crg.eu](https://foldxsuite.crg.eu/)
+2. Place the binary in the project root and rename it `foldx_20261231` (or adjust the commands in the workflow above to match your binary name)
+3. Make it executable: `chmod +x foldx_20261231`
+
+The `molecules/` rotamer library included in this repo is distributed alongside FoldX and must be in the same directory as the binary when running commands.
+
+### Python
+
 - Python ≥ 3.9
 - matplotlib, seaborn, pandas (`pip3 install matplotlib seaborn pandas`)

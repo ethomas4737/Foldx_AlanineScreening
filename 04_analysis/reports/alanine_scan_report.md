@@ -1,8 +1,11 @@
 # CC12.1 Antibody–RBD Interface: FoldX Alanine Scanning Report
 
 **Complex:** CC12.1 antibody Fab (chains H, L) bound to SARS-CoV-2 RBD (chain A)
+
 **Method:** FoldX 5.1 — RepairPDB → BuildModel → AnalyseComplex
+
 **Residues scanned:** 12 RBD interface positions (chain A); position A475 excluded (already Ala)
+
 **Date:** 2026-05-29
 
 ---

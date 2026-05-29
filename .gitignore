@@ -10,8 +10,9 @@ __pycache__/
 .venv/
 venv/
 
-# FoldX binary (download separately — see README)
+# FoldX binary and molecule library (download separately — see README)
 foldx_*
+molecules/
 
 # FoldX run artefacts (generated at runtime, not results)
 *.log

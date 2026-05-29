@@ -50,6 +50,8 @@ project_root/
 
 ## Complex Description
 
+**PDB: [6XC2](https://www.rcsb.org/structure/6XC2)**
+
 | Chain | Identity | Residues |
 |-------|----------|----------|
 | A | SARS-CoV-2 RBD | 334–528 |
@@ -64,6 +66,24 @@ Chains Z/X/Y are a symmetric copy in the crystal structure. All mutations were m
 ---
 
 ## Workflow
+
+### Step 0 — Structure preparation and residue selection (PyMOL)
+
+The starting structure is PDB [6XC2](https://www.rcsb.org/structure/6XC2) (CC12.1 Fab bound to SARS-CoV-2 RBD). Interface residues were identified using a 4.5 Å heavy-atom distance cutoff between chain A (RBD) and chains H+L (antibody), then the structure was cleaned for FoldX input:
+
+```python
+# Identify interface residues on the RBD side
+select interface, chain A within 4.5 of chain H+L
+iterate interface and name CA, print(resi, resn)
+# → 13 residues: T415 G416 K417 L455 S459 A475 G476 N487 Y495 G496 Q498 N501 G502
+
+# Remove waters and non-polymer atoms, save cleaned structure
+select to_remove, not (polymer)
+remove to_remove
+save CC12.1_RBD_clean.pdb
+```
+
+All 13 residues were included in `individual_list.txt` except A475, which is already alanine in the wild-type sequence and cannot be scanned. The cleaned PDB is `01_structures/original/CC12.1_RBD_clean.pdb`.
 
 ### Step 1 — RepairPDB
 ```bash

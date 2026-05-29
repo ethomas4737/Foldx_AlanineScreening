@@ -1,0 +1,11 @@
+FoldX 5.1 (2011)
+by the FoldX Consortium 
+Jesper Borg, Frederic Rousseau, Joost Schymkowitz,
+Luis Serrano and Francois Stricher
+------------------------------------------------------
+
+PDB file analysed: batch
+Output type: AnalyseComplex
+List of Residues at the interface: ./WT_CC12_Repair_9.pdb
+interface residues between A and LH
+RA403	DA405	EA406	RA408	QA409	TA415	KA417	DA420	YA421	YA453	LA455	FA456	KA458	SA459	NA460	YA473	AA475	SA477	EA484	FA486	NA487	YA489	FA490	QA493	YA495	FA497	QA498	TA500	NA501	YA505	IL2	QL27	IL29	SL30	SL31	YL32	QL55	SL67	QL90	LL91	NL92	SL93	YL94	PL95	KL97	VH2	LH27	TH28	SH31	NH32	YH33	YH52	SH53	SH56	FH58	RH71	RH94	DH95	LH96	DH97	VH98	YH99	DH102	VH103	
